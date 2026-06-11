@@ -53,6 +53,19 @@ A Multi-Layer Perceptron (MLP) character-level language model, based on the arch
 
 ---
 
+## 4. Makemore Part 3: Activations & Gradients, BatchNorm — `04_makemore_part3/makemore_part3_self.ipynb`
+
+An in-depth exploration of the internal dynamics of deep neural networks, focusing on initialization, activations, gradients, and batch normalization.
+
+- **Initialization & Scaling**: Properly initializes network weights (Kaiming initialization) and scales output layers to prevent extreme initial loss (hockey stick loss curve) and saturated `tanh` neurons (dead neurons).
+- **Batch Normalization**: Implements a custom `BatchNorm1d` layer from scratch to stabilize hidden layer distributions, improving training stability and speed.
+- **Diagnostics & Monitoring**: Develops rich diagnostic plots to track activation distributions (forward pass), gradient distributions (backward pass), and the update-to-data ratio across training steps.
+- **Refactoring**: Re-structures the code using PyTorch-like layer classes (`Linear`, `BatchNorm1d`, `Tanh`) to modularize forward and backward passes.
+
+**Key result**: Achieves a robust, stable, and easily expandable neural network architecture where training dynamics can be visualized, avoiding common pitfalls like exploding/vanishing gradients and dead neurons.
+
+---
+
 ## Based on
 
 Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
