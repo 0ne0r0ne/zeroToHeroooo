@@ -66,6 +66,18 @@ An in-depth exploration of the internal dynamics of deep neural networks, focusi
 
 ---
 
+## 5. Makemore Part 5: Building a WaveNet — `05_makemore_part5/wavenet.ipynb`
+
+An implementation of a WaveNet-like hierarchical architecture, extending the character-level language model to handle much larger context lengths without performance bottlenecks.
+
+- **Architecture**: Replaces the flat context window with a deep, hierarchical structure using Dilated Causal Convolutions (simulated via reshaping tricks).
+- **Hierarchical Processing**: Uses `FlattenConsecutive` layer to fuse character embeddings in pairs (e.g., 8 -> 4 -> 2 -> 1) through multiple layers, allowing the network to build abstract representations of long sequences efficiently.
+- **Dimensionality**: Masters 3-dimensional tensor operations `(Batch, Time, Channels)` to maintain the spatial (time) relationship of characters across the network layers.
+- **Modularity**: Organizes the complex architecture cleanly using a `Sequential` container class, closely mirroring the PyTorch `nn.Sequential` API.
+
+**Key result**: Successfully scales the context window from 3 to 8 characters without exploding parameter counts or memory, setting the stage for even more advanced sequence models like Transformers.
+
+---
 ## Based on
 
 Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
