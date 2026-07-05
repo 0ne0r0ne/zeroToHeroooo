@@ -81,3 +81,16 @@ An implementation of a WaveNet-like hierarchical architecture, extending the cha
 ## Based on
 
 Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+
+## 6. Let's Build GPT: from scratch — `06_lets_build_gpt/train.py`
+
+A complete, decoder-only Transformer language model built from scratch, replicating the architecture of GPT.
+
+- **Architecture**: Implements the full Transformer block including Token and Position Embeddings, Multi-Head Self-Attention, FeedForward networks, and Residual Connections.
+- **Attention Mechanism**: Hand-coded self-attention mechanism showcasing the quadratic interaction between queries and keys, masked to enforce autoregressive behavior (preventing the model from 'seeing the future').
+- **Optimization**: Incorporates LayerNorm and Dropout for training stability and regularization, ensuring robust optimization.
+- **Dataset**: Trained on a dataset of 19,000 Turkish poems to demonstrate the model's ability to learn complex grammar, syntax, and stylistic structures strictly from character-level patterns.
+
+**Key result**: Successfully builds the modern 'brain' behind Large Language Models, demonstrating how mathematical dot products and Softmax enable a neural network to 'attend' to relevant context and generate coherent text.
+
+---
