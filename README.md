@@ -78,9 +78,6 @@ An implementation of a WaveNet-like hierarchical architecture, extending the cha
 **Key result**: Successfully scales the context window from 3 to 8 characters without exploding parameter counts or memory, setting the stage for even more advanced sequence models like Transformers.
 
 ---
-## Based on
-
-Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
 ## 6. Let's Build GPT: from scratch — `06_lets_build_gpt/train.py`
 
@@ -94,3 +91,7 @@ A complete, decoder-only Transformer language model built from scratch, replicat
 **Key result**: Successfully builds the modern 'brain' behind Large Language Models, demonstrating how mathematical dot products and Softmax enable a neural network to 'attend' to relevant context and generate coherent text.
 
 ---
+
+## Based on
+
+Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
