@@ -92,6 +92,18 @@ A complete, decoder-only Transformer language model built from scratch, replicat
 
 ---
 
+## 7. Let's Build the GPT Tokenizer — `07_GPT_Tokenizer/tokenizerGPT.ipynb`
+
+An implementation of the Byte Pair Encoding (BPE) algorithm from scratch, demonstrating how Large Language Models convert raw text into discrete tokens.
+
+- **Byte Pair Encoding (BPE)**: Implements the core algorithm to iteratively find and merge the most frequent adjacent byte pairs, compressing the sequence length and building a sub-word vocabulary.
+- **Encoding & Decoding**: Features fully functional `encode` (text to IDs) and `decode` (IDs to text) methods, handling UTF-8 encoding complexities.
+- **Vocabulary Building**: Demonstrates how an AI model learns its "alphabet" (vocabulary) from the ground up based on the statistical properties of the training data.
+
+**Key result**: Demystifies the often-overlooked first stage of the LLM pipeline, revealing how characters are grouped into tokens to allow the Transformer to process text far more efficiently than character-level models.
+
+---
+
 ## Based on
 
 Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
