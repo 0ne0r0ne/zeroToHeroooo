@@ -104,6 +104,19 @@ An implementation of the Byte Pair Encoding (BPE) algorithm from scratch, demons
 
 ---
 
+## 8. Final Project: MNIST Digit Classifier — `09_final_project/engine.ipynb`
+
+A handwritten digit classifier trained on the MNIST dataset, built entirely from scratch using only NumPy — no PyTorch, no TensorFlow.
+
+- **Architecture**: 2-layer MLP (784 → 128 → 10)
+- **Activations**: ReLU (hidden layer), Softmax (output layer)
+- **Training**: Manual forward pass, backpropagation, and gradient descent — all implemented by hand
+- **Dataset**: 60,000 training images, 10,000 test images (28×28 grayscale). Download from [pjreddie.com](https://data.pjreddie.com/files/mnist_train.csv)
+
+**Result:** 92.27% accuracy on the unseen test set.
+
+---
+
 ## Based on
 
 Andrej Karpathy — [Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
